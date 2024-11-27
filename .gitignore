@@ -1,0 +1,4 @@
+#ignore all logs/aux files
+
+/*/*.synctex.gz
+
