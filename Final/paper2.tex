@@ -1,3 +1,26 @@
-\section{Paper 2}\label{sec:paper2}
+\section{NVIDIA  Hopper H100 GPU: Scaling Performance}\label{sec:paper2}
 
-paper 2 stuff...
+This paper is presented by Jack Choquette from NVIDIA and is published by the IEEE Computer Society in 2023.
+
+This paper focuses specifically on GPUs and how they can be improved to be utilized for ML tasks.
+The particular model that is discussed is the novel H100 generation of GPU hardware architecture.
+This applies improvements by featuring larger L2 caches, more HBM3 sites, higher memory bandwidth, and twice of the throughput when compared to the previous generation A100 GPU.
+
+The author suggests that the new H100 architecture, named the Hopper architecture, is capable of handling better data and parallel execution.
+By improving the spatial locality of the logical sections on the chip, i.e. the placement and connections between the functional components, they can vastly improve it's performance.
+This is further improved when connected to another novel technology created by NVIDIA, the NVLink network interconnect.
+The NVLink is a network of interconnect switches alongisde the hardware CPU and GPU hardware to improve the way that the hardware utilizes the data on the network.
+
+In the H100 architecture, they add a fourth layer to the structure of how it operates to oversee the thread block clusters.
+This new layer utilizes the resdesign changes of the chipset, and allows for a more sophisticated connection to the network via NVLink. 
+This allows for faster asynchronous data transfer and execution, which allows for major improvements with DL models and other tensor-based calculations.
+
+This paper relies heavily on NVIDIA's previous technology as a basepoint to then extend from.
+As a singular product from NVIDIA, this is massively beneficial, but seeing as this is proprietary information only held and utilized for NVIDIA  means that other hardware developers cannot utilize these improvements directly to their own devices.
+As such, it remains subject to scrutiny as to whether the presented metrics are truthful.
+
+To give NVIDIA fair credit, they have outlined a novel model for designing GPU chips.
+These chips can directly connect to the network through a series of interconnected network switches, most likely at the third layer of the OSI model.
+Furthermore, with AI/ML/DL tasks continuously being used by many groups for a wide array of tasks, it necessitates innovation for improving performance and connectivity to data sources.
+With these advancements from NVIDIA, it is expected to only propogate the AI craze even further.
+As to whether this is a net positive for society is up to debate, however.
