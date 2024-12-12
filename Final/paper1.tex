@@ -1,3 +1,28 @@
-\section{Paper 1}\label{sec:paper1}
+\section{Traditional Architecture Artificial Intelligence Chip Technology}\label{sec:paper1}
 
-paper 1 stuff...
+This publication is authored by Qinze Jiang and Jiajun Zhan who presented their work at the 2nd International Conference on Computer Science and Management Technology (ICCSMT) held in 2021.
+
+The main goal is this paper is to try to compare different hardware architectures for handling AI and ML tasks and looking at various ways to improve performance for each.
+There are a total of 3 different types of architectures discussed:
+\begin{itemize}
+    \item GPUs
+    \item FPGAs
+    \item ASIC Chips
+\end{itemize}
+
+These different technologies all have different purposes for being used.
+GPUs are the classical solution to handling ML tasks.
+They are capable of handling the complex tensor computations due to their many simplistic designed cells (processing units).
+This simplistic design is contrasted by that of the FPGA, which is more complex and allows them to be programmed via logical blocks (gates) and can be configured before usage.
+This enables them to be more efficient than the classical GPU which is more general purpose.
+An alternative to both would be the ASIC chips which are specifically designed to the purpose instead of being programmed for it.
+By instead designing the hardware for the particular task for AI/ML processing, this can further improve performance.
+
+To improve each of these technologies, the authors propose a series of solutions.
+For GPUs, they suggest combining their operation via more sophisticated software such as Kubernetes and Docker.
+For FPGAs, they suggest to use FPGA Accelerators to improve performance for a particular type of ML model.
+For ASIC chips, they suggest a design using Word Lines and particular charges on each side of the line for maintaining a highly optimized form of calculating Matrix vector multiplication.
+
+The main weaknesses of this paper are that it contains some false information, as Multiple GPUs don't need to be connected via Docker/Kubernetes, and that it focuses primarily on only Neural Networks.
+Perhaps other ML algorithms may see some improvement so these technologies would be used more regularly.
+This paper does excel at providing several viable implementations of these various technologies to improve performance.
