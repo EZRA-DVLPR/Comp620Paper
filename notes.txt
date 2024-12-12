@@ -1,0 +1,20 @@
+one page summary for each of the four papers (i.e. 4 pages total of summary)
+
+no more than 5 pages
+
+last page is a comparison b/n the other four papers, our thoughts/ideas, conclusion, and references
+
+Each summary must have:
+
+0: Title, authors, venue
+1: summary (overview) of the paper
+    what is the problem that the paper is trying to solve?
+    what are the key ideas? What is the implementation?
+    What are the key results? key conclusions?
+2: Strengths of the proposed method (most important ones)
+3: weaknesses of the proposed method (room for improvement and future research can accomplish this)
+
+
+On page 5 it will have:
+
+Thoughts/ideas, comparison and conclusion
