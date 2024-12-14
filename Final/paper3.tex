@@ -1,3 +1,14 @@
-\section{Paper 3}\label{sec:paper3}
+\section{Dynamic GPU Energy Optimization for Machine Learning Training Workloads}\label{sec:paper3}
 
-paper 3 stuff...
+The authors of this publication consist of Farui Wang, Weizhe Zhang, Senior Member IEEE Shichao Lai, Meng Hao, and Zheng Wang.
+
+This paper provides a novel GPU energy optimization framework called GPOEO which is able to dynamically determine the most optimal energy saving configuration to save energy while deploying different machine learning tasks.  
+
+As machine learning tasks become longer and greater overtime while processing substantial amounts of data, GPU energy optimization becomes a critical aspect of exploration towards computer architecture and GPUs in general.  
+The author's novel idea of GPOEO utilizes an online model of GPU energy optimization which trades execution time for greater energy efficiency.  
+
+The GPOEO framework is comprised of an offline training stage followed by an online optimization stage. During the first stage, the representitive benchmarks are ran on each SM and memory clock frequency in order to find performance counter metrics on the reference SM, memory frequencies, and energy time data. After, the multi objective models are trained. For the second half of the framework, energy and performance counter metrics in a single detected period are measured to predict the best SM and memory frequency. Various frequencies close to the predicted optimal configuration are compared against the measured energy time data to look for the true optimal solution. Lastly, the true optimal solution is set and then its energy characteristics are observed. 
+
+The authors reference a few related works which they state as being mostly comprised of being offline models and critique the methods as having a greater learning curve compared to their online counterparts. 
+
+The metrics for GPOEO were evaluated using 71 machine learning workloads from two AI benchmark suits which ran on an NVIDIA RTX3080Ti GPU. In comparison to the default NVIDIA scheduling methods, GPOEO performed a mean energy saving of 16.2 percent with an average execution time increase of 5.1 percent.
