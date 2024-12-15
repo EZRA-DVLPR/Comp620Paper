@@ -1,3 +1,11 @@
-\section{Paper 4}\label{sec:paper4}
+\section{Flexible Instrumentation for Live On-Chip Debug of Machine Learning Training on FPGAs}\label{sec:paper4}
 
-paper 4 stuff...
+The authors of this publication consist of Daniel Holanda Noronha, Zhiqiang Que, Wayne Luk and Steven J.E. Wilton.
+
+This paper goes in depth into to research behind FPGA chips and how to improve the training of machine learning tasks by discussing a novel on chip debugging instrumentation.
+
+As FPGAs (Field Programmable Gate Arrays) have shown to be a great option for certain machine learning tasks, the authors of this paper aim to improve upon the issue of FPGAs high computational costs. 
+To do so, monitering on chip data to be able to diagnose any issues in a timely manner is crucial so that the overall cost of training may be reduced. The paper's instrumentation improves on previous works by storing gathered data off chip rather than using up recources of on chip memory. The paper provides motivational examples highlighting the need for clarity regarding run time results of training applications. The main proposition boasts a flexible on chip debugging method for FGPA machine learning training sessions while quantifying the outcomes of utilizing such an infrastructure within hardware accelrators. The study of how these factors impact changes according to certain sets of parameters is also a relevant aspect to this paper.
+
+The paper presents a classification of bugs into five categories: data bugs, syntax bugs, structural bugs, and conceptual bugs. Though previous works have focused on mainly structural bugs during inference, the authors have added onto this concept by incorporating conceptual bugs which only become obvious during training. To provide an example of such conceptual bugs, the authors modeled a DNN with ReLu activation within the hidden layers to execute a classification task. At first the DNN behaves decently during the first few epochs but after the 33rd epoch accuracy starts to slow down significantly but recovers eventually. This instance would not have been found in an initial RTL level simulation.
+The authors critique current exisiting on chip debugging as being low in flexibility such that most of the solutions on the market lack the ability to dynamically adapt at runtine or perform minimal data compression on chip. The novel chip debugging explained in this paper is superior as the instrumentation generates aggregated date to condense information in a domain specific manner. The proposed system is also firmware programmable which gives programmers and designers the opportunity to receive a broader range of debug information tailored to each specified need towards the training process.
